@@ -1,0 +1,129 @@
+.header {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f0efed;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
+.header_container {
+  display: flex;
+  max-width: 85%;
+  height: 6rem;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.header_logo {
+  width: 4rem;
+  position: relative;
+  top: 1rem;
+}
+
+/* 햄버거 버튼 */
+.menu_toggle {
+  display: inline-block;
+  font-size: 3.5rem;
+  margin-top: 1.3rem;
+  cursor: pointer;
+  z-index: 99;
+}
+.navi_container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #f0efed;
+  z-index: 9;
+}
+.navi_list {
+  display: block;
+  width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  line-height: 2.3;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navi_list:hover {
+  opacity: 0.6;
+}
+
+/* pc버전 감추기 */
+.navi_container_pc {
+  display: none;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  .header {
+    height: 7rem;
+  }
+  .header_container {
+    max-width: 70%;
+    height: 7rem;
+  }
+  .header_logo {
+    width: 5rem;
+    top: 1rem;
+    z-index: 99;
+  }
+  .menu_toggle {
+    display: none;
+  }
+
+  .navi_container_pc {
+    display: block;
+    height: 7rem;
+  }
+  .navi_pc {
+    width: 60%;
+    height: 7rem;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 16rem;
+    background: none;
+    text-align: center;
+  }
+  .navi_lists_pc {
+    width: 20%;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .navi_lists_pc::after {
+    content: "";
+    display: block;
+    width: 0;
+    transition: width 0.3s;
+  }
+  .navi_lists_pc:hover::after {
+    position: relative;
+    left: 3.3rem;
+    bottom: 4rem;
+    width: 60%;
+    height: 2rem;
+    background: #46b96c;
+    transform: rotate(-2deg);
+    opacity: 0.4;
+  }
+  .navi_list_pc {
+    display: block;
+    width: 100%;
+    font-size: 1.7rem;
+    line-height: 4;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

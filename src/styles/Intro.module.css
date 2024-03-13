@@ -1,0 +1,83 @@
+.intro {
+  width: 100%;
+  height: 100vh;
+}
+.intro_container {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+.svg {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.intro_title {
+  position: relative;
+  top: 4.3rem;
+  font-size: 4rem;
+}
+.intro_title_line {
+  line-height: 1.5;
+}
+.intro_title_line strong {
+  position: relative;
+  font-family: "NanumSquareNeoHeavy";
+}
+.intro_title_line strong::before {
+  background: #46b96c;
+  content: "";
+  width: calc(100% + 4px);
+  position: absolute;
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+.down_arrow {
+  font-size: 4rem;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: fade_in 2s linear infinite;
+}
+
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro_container {
+    width: 70%;
+    top: 20%;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  .intro_container {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .svg {
+    width: 45%;
+  }
+  .intro_title {
+    font-size: 5rem;
+    top: 0;
+  }
+}

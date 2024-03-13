@@ -1,0 +1,18 @@
+.xi_caret_up_square {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 5rem;
+}
+.footer_sentence {
+  font-size: 0.8rem;
+  color: #868686;
+}

@@ -1,0 +1,161 @@
+.aboutskill {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+.about_title {
+  font-family: "NanumSquareNeoHeavy";
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #333;
+}
+
+/* section - 소개 */
+.profile_img1,
+.profile_img2 {
+  width: 20rem;
+  display: block;
+}
+.about_wrapper {
+  border: 2px solid #333;
+  box-shadow: 13px 13px 0 0 #333;
+  padding: 2rem;
+  background: #fafafa;
+}
+.profile_sentence {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.profile_sentence li:first-child {
+  margin-bottom: 1rem;
+}
+.profile_text {
+  font-size: 1.5rem;
+}
+.profile_text ul:first-child {
+  display: flex;
+  justify-content: space-around;
+}
+.profile_details {
+  background: #eaeaef;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+.details_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.details_left a:hover {
+  text-decoration: underline;
+  color: #46b96c;
+}
+.details_right {
+  margin-bottom: 1rem;
+}
+.icons {
+  font-size: 3.3rem;
+  vertical-align: middle;
+}
+.date {
+  font-size: 1.2rem;
+}
+
+/* section - 기술 */
+.profile_img_wrapper {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+.skills_wrapper {
+  margin-bottom: 2rem;
+}
+.skills_title,
+.tools_title {
+  font-family: "NanumSquareNeoHeavy";
+  border-bottom: 2px solid #eaeaef;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+.skills_tools_icons {
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
+  vertical-align: text-top;
+}
+.skills_tools_hashtag {
+  margin-left: 0.5rem;
+}
+.skills_tools_hashtag span,
+.project_hashtag span {
+  display: inline-block;
+  font-family: "NanumSquareNeoHeavy";
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  background: #eaeaef;
+  padding: 0.5rem 0.7rem;
+  margin: 0 0.5rem 1rem 0;
+}
+.skills_tools_text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0.5rem 0.5rem 0 2rem;
+}
+.skills_tools_text ul li::marker {
+  content: "◾";
+  font-size: 0.7rem;
+}
+.skills_tools_text ul li {
+  margin-bottom: 0.7rem;
+  padding-left: 0.5rem;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .profile_img1 {
+    margin-left: 5rem;
+  }
+  .profile_img2 {
+    margin-right: 5rem;
+  }
+  .about_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .profile_text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  .aboutskill {
+    width: 70%;
+  }
+  .profile_img1,
+  .profile_img2 {
+    width: 24rem;
+  }
+  .profile_img1 {
+    margin-left: 5rem;
+  }
+  .profile_img2 {
+    margin-right: 5rem;
+  }
+  .about_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .profile_text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
