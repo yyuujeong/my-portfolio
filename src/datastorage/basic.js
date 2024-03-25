@@ -24,10 +24,10 @@ export const skillTools = [
 export const projectList = [
   {
     id: "1",
-    site: "https://yyuujeong.github.io/react-weather-finedust/",
+    site: "https://weather-finedust.vercel.app",
     img: work1,
     name: "포트폴리오",
-    tags: ["React", "Styled-Components"],
+    tags: ["React", "Styled-Components", "Express.js"],
     category: "개인 프로젝트",
     title: "날씨 조회/위치 기반 미세먼지",
     infos: ["개인 프로젝트", "Open API를 활용해 보고자 제작"],
@@ -36,14 +36,18 @@ export const projectList = [
       "시간대 별 배경화면 변화",
       "react-router를 이용한 페이지 이동 (특정 링크 스타일링을 위해 NavLink 사용)",
       "Open API를 사용하고 async & await와 axios로 API 호출",
-      "미디어 쿼리를 이용해 반응형으로 제작",
-      "세계 도시를 검색하여 날씨 정보 조회",
+      "API 키 보호를 위해 Express 백엔드 프레임워크 사용 & 정보 조회를 위한 REST API 구현",
+      "미디어 쿼리를 이용해 반응형으로 제작"
+    ],
+    descs_one: [
+      "세계 도시를 검색하여 날씨 정보 조회"
+    ],
+    descs_two: [
       "Geolocation API를 이용해 사용자 위치를 구함",
       "Reverse-Geocoding으로 위도와 경도 값을 주소로 변환",
-      "미세먼지 단계별 이모티콘 & 색상 변경",
-    ],
+      "미세먼지 단계별 이모티콘 & 색상 변경"
+    ]
   },
-
   {
     id: "2",
     site: "https://yyuujeong.github.io/team-keepingbox/keepingbox/",
