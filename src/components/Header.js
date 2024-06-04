@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Header.module.css";
 import logo from "../images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -13,12 +13,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.header_container}>
-        <a href="/">
-          <img
-            src={logo}
-            alt="헤더로고"
-            className={styles.header_logo}
-          />
+        <a href="/my-portfolio">
+          <img src={logo} alt="헤더로고" className={styles.header_logo} />
         </a>
 
         <div className={styles.menu_toggle} onClick={handleToggle}>

@@ -25,12 +25,13 @@ export const projectList = [
   {
     id: "1",
     site: "https://weather-finedust.vercel.app",
+    github: "https://github.com/yyuujeong/weather-finedust",
     img: work1,
     name: "포트폴리오",
     tags: ["React", "Styled-Components", "Express.js"],
     category: "개인 프로젝트",
     title: "날씨 조회/위치 기반 미세먼지",
-    infos: ["개인 프로젝트", "Open API를 활용해 보고자 제작"],
+    infos: ["개인 프로젝트", "리액트와 express를 사용한 프로젝트로 Open API를 활용해 보고자 제작", "Vercel을 통해 배포"],
     descs: [
       "styled-components로 스타일 적용",
       "시간대 별 배경화면 변화",
@@ -51,28 +52,29 @@ export const projectList = [
   {
     id: "2",
     site: "https://yyuujeong.github.io/team-keepingbox/keepingbox/",
+    github: "https://github.com/yyuujeong/team-keepingbox",
     img: work2,
     name: "포트폴리오",
     tags: ["HTML5", "CSS3", "JS"],
     category: "팀 프로젝트",
     title: "키핑박스",
     infos: [
-      "팀 프로젝트",
+      "2인 팀 프로젝트",
       "짐을 맡길 수 있는 예약 서비스를 주제로 제작",
-      "제작영역 : 기획, 디자인, HTML 마크업, CSS 스타일링, js기능구현",
     ],
     descs: [
       "오늘 날짜 이전으로는 선택되지 않도록 구현",
-      "기간, 사이즈 선택에 따라 요금 계산",
+      "사이즈, 날짜 별로 요금 계산",
       "회원가입/수정, 아이디/비밀번호 찾기를 위해 정규식 유효성 검사 활용",
     ],
   },
   {
     id: "3",
     site: "https://yyuujeong.github.io/responsive-renewal/cremedemarrons/",
+    github: "https://github.com/yyuujeong/responsive-renewal",
     img: work3,
     name: "포트폴리오",
-    tags: ["HTML5", "CSS3", "JS", "jQuery"],
+    tags: ["HTML5", "CSS3", "jQuery"],
     category: "개인 반응형 리뉴얼",
     title: "크렘드마롱",
     infos: [
@@ -88,6 +90,7 @@ export const projectList = [
   {
     id: "4",
     site: "https://yyuujeong.github.io/react-todolist/",
+    github: "https://github.com/yyuujeong/react-todolist",
     img: work4,
     name: "포트폴리오",
     tags: ["React", "CSS3"],
@@ -106,9 +109,10 @@ export const projectList = [
   {
     id: "5",
     site: "https://yyuujeong.github.io/mobile-renewal/oldchannel/",
+    github: "https://github.com/yyuujeong/mobile-renewal",
     img: work5,
     name: "포트폴리오",
-    tags: ["HTML5", "CSS3", "JS", "jQuery"],
+    tags: ["HTML5", "CSS3", "jQuery"],
     category: "개인 모바일 리뉴얼",
     title: "올드채널",
     infos: [

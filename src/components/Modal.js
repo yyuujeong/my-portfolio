@@ -17,8 +17,8 @@ const Modal = ({ modal, openModal, closeModal }) => {
               <div>
                 <ul className={styles.detail_btns}>
                   <li className={styles.detail_btn}>
-                    <a href={item.site} target="_blank">
-                      URL
+                    <a href={item.github} target="_blank">
+                      깃허브
                     </a>
                   </li>
                   <FaTimes
