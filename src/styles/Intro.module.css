@@ -34,7 +34,6 @@
   left: -2px;
   bottom: 0;
   z-index: -1;
-  transform: rotate(-2deg);
 }
 .down_arrow {
   font-size: 4rem;

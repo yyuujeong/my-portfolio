@@ -2,10 +2,9 @@ import React from "react";
 import styles from "../styles/AboutSkill.module.css";
 import profileImg1 from "../images/profile-img1.png";
 import profileImg2 from "../images/profile-img2.png";
-import { FaEnvelope, FaGithub, FaGear, FaFile  } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaGear } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa";
 import { skillTools } from "../datastorage/basic";
-import pdffile from "../view/frontend_resume_nayujeong.pdf";
 
 const AboutSkill = () => {
   return (
@@ -39,9 +38,6 @@ const AboutSkill = () => {
               <li className={styles.details_left}>
                 <FaEnvelope className={styles.icons} />
                 이메일: imnyj9@gmail.com
-              </li>
-              <li className={styles.details_left}>
-                <a href="" target="_blank"><FaFile className={styles.icons}/>이력서: </a>
               </li>
             </ul>
             <ul className={styles.profile_details}>

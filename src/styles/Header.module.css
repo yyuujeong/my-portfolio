@@ -107,12 +107,11 @@
   }
   .navi_lists_pc:hover::after {
     position: relative;
-    left: 3rem;
+    left: 3.3rem;
     bottom: 4rem;
-    width: 65%;
+    width: 60%;
     height: 2rem;
     background: #46b96c;
-    transform: rotate(-2deg);
     opacity: 0.4;
   }
   .navi_list_pc {
