@@ -18,7 +18,6 @@
   display: block;
 }
 .about_wrapper {
-  font-family: "NanumSquareNeoBold";
   border: 2px solid #333;
   box-shadow: 13px 13px 0 0 #333;
   padding: 2rem;
@@ -29,42 +28,48 @@
   font-size: 1.5rem;
   line-height: 1.5;
 }
-.profile_sentence li:first-child {
-  margin-bottom: 1rem;
+.profile_sentence li {
+  position: relative;
+  margin-bottom: 0.7rem;
+  padding-left: 2.5rem;
+}
+.profile_sentence li::before {
+  position: absolute;
+  content: "\2705";
+  font-size: 0.7rem;
+  left: 0rem;
 }
 .profile_text {
   font-size: 1.5rem;
-}
-.profile_text ul:first-child {
-  display: flex;
-  justify-content: space-around;
-}
-.profile_details {
   background: #eaeaef;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 0.3rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
-.details_left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.5rem;
+.profile_details:first-child {
+  margin-bottom: 3rem;
+}
+.details_left:not(:last-child) {
+  margin-bottom: 1rem;
 }
 .details_left a:hover {
   text-decoration: underline;
   color: #46b96c;
 }
 .details_right {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
 }
 .icons {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
   vertical-align: middle;
+  margin-right: 0.7rem;
+}
+.profile_details a:hover .icons {
+  fill: #46b96c;
 }
 .date {
   font-size: 1.2rem;
+  color: #a3a3a3;
 }
 
 /* section - 기술 */
@@ -134,7 +139,9 @@
   .profile_text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  }
+  .profile_details:first-child {
+    margin-bottom: 0;
   }
 }
 
@@ -160,6 +167,8 @@
   .profile_text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  }
+  .profile_details:first-child {
+    margin-bottom: 0;
   }
 }

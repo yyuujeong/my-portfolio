@@ -45,10 +45,8 @@
   display: block;
   width: 100%;
   padding: 5rem 0;
-  font-family: "NanumSquareNeo";
   text-align: center;
   font-size: 2.3rem;
-  font-weight: bold;
   line-height: 2.3;
   background: #f0efed;
   border: none;
@@ -109,9 +107,9 @@
   }
   .navi_lists_pc:hover::after {
     position: relative;
-    left: 3.3rem;
+    left: 3rem;
     bottom: 4rem;
-    width: 60%;
+    width: 65%;
     height: 2rem;
     background: #46b96c;
     transform: rotate(-2deg);
@@ -120,11 +118,9 @@
   .navi_list_pc {
     display: block;
     width: 100%;
-    font-family: "NanumSquareNeo";
     font-size: 1.7rem;
     line-height: 4;
     letter-spacing: 0.1rem;
-    font-weight: bold;
     border: none;
     outline: none;
     cursor: pointer;

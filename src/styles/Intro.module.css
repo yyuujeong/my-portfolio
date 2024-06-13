@@ -28,9 +28,9 @@
 .intro_title_line strong::before {
   background: #46b96c;
   content: "";
-  width: calc(100% + 4px);
+  width: calc(100% + 10px);
   position: absolute;
-  height: 60%;
+  height: 55%;
   left: -2px;
   bottom: 0;
   z-index: -1;

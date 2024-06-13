@@ -18,7 +18,6 @@ const Intro = () => {
           </li>
         </ul>
       </div>
-
       <Link to="aboutskill" spy={true} smooth={true}>
         <FaCaretDown className={styles.down_arrow} />
       </Link>

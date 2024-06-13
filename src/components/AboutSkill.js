@@ -2,9 +2,10 @@ import React from "react";
 import styles from "../styles/AboutSkill.module.css";
 import profileImg1 from "../images/profile-img1.png";
 import profileImg2 from "../images/profile-img2.png";
-import { FaEnvelope, FaGithub, FaGear } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaGear, FaFile  } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa";
 import { skillTools } from "../datastorage/basic";
+import pdffile from "../view/frontend_resume_nayujeong.pdf";
 
 const AboutSkill = () => {
   return (
@@ -19,41 +20,43 @@ const AboutSkill = () => {
         <div className={styles.about_wrapper}>
           <ul className={styles.profile_sentence}>
             <li>
-              웹 표준, 웹 접근성 및 크로스 브라우징을 준수하여
-              사용자의 편의성을 고려한 사이트를 효율적으로 개발하기 위해
-              노력합니다.
+            개발을 접한 후 웹을 보는 시각이 새로워졌고, 흥미와 열정을 가지고 직접 개발을 하게 되었습니다.
             </li>
             <li>
-              또한 지속적인 학습을 통해 보다 나은 코드를
-              작성하고자 합니다.
+              어떻게 하면 사용자가 쉽고 편하게 사용할 수 있을지, 어떤 점을
+              개선해야 할지 끊임없이 고민합니다.
+            </li>
+            <li>
+              다양한 기술을 습득해 적용하고 협업하며 사용자 중심의 솔루션을
+              제공하고 싶습니다.
             </li>
           </ul>
           <div className={styles.profile_text}>
             <ul className={styles.profile_details}>
               <li className={styles.details_left}>
-                <FaGithub className={styles.icons} />
-                <a href="https://github.com/yyuujeong" target="_blank">
-                  yyuujeong
-                </a>
+                <a href="https://github.com/yyuujeong" target="_blank"><FaGithub className={styles.icons}/>깃허브: yyuujeong</a>
               </li>
               <li className={styles.details_left}>
                 <FaEnvelope className={styles.icons} />
-                imnyj9@gmail.com
+                이메일: imnyj9@gmail.com
+              </li>
+              <li className={styles.details_left}>
+                <a href="" target="_blank"><FaFile className={styles.icons}/>이력서: </a>
               </li>
             </ul>
             <ul className={styles.profile_details}>
               <li className={styles.details_right}>
-                {"["}그린컴퓨터 아카데미{"]"}
+                UI/UX 반응형 웹디자인&웹퍼블리셔{"("}디자인&코딩{")"}
               </li>
               <li className={styles.details_right}>
-                반응형 웹디자인{"("}UIUX{")"} & 웹퍼블리셔
+                웹기획, 웹디자인{"("}UIUX{")"} & 웹퍼블리셔, 반응형 웹페이지
+                구현
               </li>
               <li className={styles.date}>2021.12 ~ 2022.09</li>
             </ul>
           </div>
         </div>
       </div>
-
       {skillTools.map((skillTool) => (
         <div>
           <div className={styles.profile_img_wrapper}>

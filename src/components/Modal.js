@@ -41,17 +41,12 @@ const Modal = ({ modal, openModal, closeModal }) => {
               {item.id >= 1 && (
                 <div>
                   <div className={styles.detail_text}>
-                    <div className={styles.bookmark_title}>
-                      <FaHashtag className={styles.bookmark} />
-                      프로젝트 소개
-                    </div>
                     {item.infos.map((info) => (
                       <ul>
                         <li>{info}</li>
                       </ul>
                     ))}
                   </div>
-                  <div className={styles.line}></div>
                   <div className={styles.detail_text}>
                     <div className={styles.bookmark_title}>
                       <FaHashtag className={styles.bookmark} />
@@ -60,34 +55,6 @@ const Modal = ({ modal, openModal, closeModal }) => {
                     {item.descs.map((desc, index) => (
                       <ul key={index}>
                         <li>{desc}</li>
-                      </ul>
-                    ))}
-                  </div>
-                </div>
-              )}
-              {item.id <= 1 && (
-                <div>
-                  <div className={styles.line}></div>
-                  <div className={styles.detail_text}>
-                    <div className={styles.bookmark_title}>
-                      <FaHashtag className={styles.bookmark} />
-                      날씨 조회
-                    </div>
-                    {item.descs_one.map((descs_one_list, index) => (
-                      <ul key={index}>
-                        <li>{descs_one_list}</li>
-                      </ul>
-                    ))}
-                  </div>
-                  <div className={styles.line}></div>
-                  <div className={styles.detail_text}>
-                    <div className={styles.bookmark_title}>
-                      <FaHashtag className={styles.bookmark} />
-                      위치 기반 미세먼지
-                    </div>
-                    {item.descs_two.map((descs_two_list, index) => (
-                      <ul key={index}>
-                        <li>{descs_two_list}</li>
                       </ul>
                     ))}
                   </div>

@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <footer className={styles.footer}>
         <p className={styles.footer_sentence}>
-          Copyright&copy;2024 Nayujeong All rights reserved.
+          NAYUJEONG PORTFOLIO
         </p>
       </footer>
     </div>
