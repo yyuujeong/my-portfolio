@@ -54,6 +54,10 @@
 .groupA_detail_btns a:hover .icon {
   fill: #46b96c;
 }
+.groupA_date {
+  margin: 0.5rem 0 1.5rem 0.3rem;
+  color: #868686;
+}
 .groupA_hashtag span {
   display: inline-block;
   font-family: "NanumSquareNeoHeavy";
@@ -134,7 +138,7 @@
   border-radius: 2rem;
   background: #eaeaef;
   padding: 0.5rem 0.7rem;
-  margin: 0 0.5rem 1.5rem 0;
+  margin: 0 0.5rem 1rem 0;
 }
 .project_category {
   font-size: 1.3rem;

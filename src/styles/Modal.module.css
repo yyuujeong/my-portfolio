@@ -72,8 +72,12 @@
   margin-right: 0.5rem;
   padding: 0.5rem 0.7rem;
 }
+.groupB_date {
+  margin: 1rem 0 0 0.3rem;
+  color: #868686;
+}
 .detail_text {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .detail_text:first-child {
   background: #eaeaef;

@@ -1,7 +1,7 @@
 import work1 from "../images/project-weather.png";
 import work2 from "../images/project-keepingbox.png";
-import work3 from "../images/project-todolist.png";
-import work4 from "../images/project-creme.png";
+import work3 from "../images/project-creme.png";
+import work4 from "../images/project-todolist.png";
 import work5 from "../images/project-oldchannel.jpg";
 
 export const skillTools = [
@@ -29,6 +29,7 @@ export const groupAList = [
     github: "https://github.com/yyuujeong/weather-finedust",
     img: work1,
     name: "포트폴리오",
+    date: "2023.12 - 2024.02",
     tags: ["React", "Styled-Components", "Express"],
     category: "개인 프로젝트",
     title: "날씨 조회/위치 기반 미세먼지",
@@ -37,7 +38,7 @@ export const groupAList = [
     ],
     descs: [
       "Open API를 통해 사용자 위치와 날씨/대기 정보를 얻어옴",
-      "API 키 보호를 위해 Express 백엔드 프레임워크를 사용했으며, 정보 조회를 위해 REST API를 구현",
+      "정보 조회를 위해 REST API를 구현하고, API 키를 보호하기 위해 Express 백엔드 프레임워크를 사용하여 개선",
       "대기 질 상태를 직관적으로 표현하기 위해 이모지와 색상, 메시지를 사용"
     ],
   },
@@ -47,6 +48,7 @@ export const groupAList = [
     github: "https://github.com/yyuujeong/team-keepingbox",
     img: work2,
     name: "포트폴리오",
+    date: "2022.05 - 2022.06",
     tags: ["HTML5", "CSS3", "JS"],
     category: "팀 프로젝트",
     title: "키핑박스",
@@ -62,10 +64,30 @@ export const groupAList = [
 export const groupBList = [
   {
     id: "3",
-    site: "https://yyuujeong.github.io/react-todolist/",
-    github: "https://github.com/yyuujeong/react-todolist",
+    site: "https://yyuujeong.github.io/responsive-renewal/cremedemarrons/",
+    github: "https://github.com/yyuujeong/responsive-renewal",
     img: work3,
     name: "포트폴리오",
+    date: "2022.04 - 2022.05",
+    tags: ["HTML5", "CSS3", "jQuery"],
+    category: "개인 반응형 리뉴얼",
+    title: "크렘드마롱_반응형 리뉴얼",
+    infos: [
+      "개인 프로젝트로, 반응형 홈페이지 리뉴얼을 통해 문제점과 사용성을 개선했습니다.",
+    ],
+    descs: [
+      "Swiper, Slick 등의 라이브러리를 이용해 자동 슬라이드와 인디케이터를 활성화",
+      "수량의 증가/감소에 따라 총합이 자동으로 계산",
+      "반응형 구현을 위해 미디어 쿼리를 사용",
+    ],
+  },
+  {
+    id: "4",
+    site: "https://yyuujeong.github.io/react-todolist/",
+    github: "https://github.com/yyuujeong/react-todolist",
+    img: work4,
+    name: "포트폴리오",
+    date: "2023.05",
     tags: ["React", "CSS3"],
     category: "개인 프로젝트",
     title: "리액트 투두리스트",
@@ -79,34 +101,17 @@ export const groupBList = [
     ],
   },
   {
-    id: "4",
-    site: "https://yyuujeong.github.io/responsive-renewal/cremedemarrons/",
-    github: "https://github.com/yyuujeong/responsive-renewal",
-    img: work4,
-    name: "포트폴리오",
-    tags: ["HTML5", "CSS3", "jQuery"],
-    category: "개인 반응형 리뉴얼",
-    title: "크렘드마롱_반응형 리뉴얼",
-    infos: [
-      "개인으로 진행한 프로젝트로, 반응형 홈페이지 리뉴얼을 통해 문제점과 사용성을 개선했습니다.",
-    ],
-    descs: [
-      "Swiper, Slick 등의 라이브러리를 이용해 자동 슬라이드와 인디케이터를 활성화",
-      "수량의 증가/감소에 따라 총합이 자동으로 계산",
-      "반응형 구현을 위해 미디어 쿼리를 사용",
-    ],
-  },
-  {
     id: "5",
     site: "https://yyuujeong.github.io/mobile-renewal/oldchannel/",
     github: "https://github.com/yyuujeong/mobile-renewal",
     img: work5,
     name: "포트폴리오",
+    date: "2022.03",
     tags: ["HTML5", "CSS3", "jQuery"],
     category: "개인 모바일 리뉴얼",
     title: "올드채널_모바일 리뉴얼",
     infos: [
-      "개인으로 진행한 프로젝트로, PC 환경에만 적합했던 기존 페이지를 모바일에서도 직관적으로 사용할 수 있도록 브랜드가 추구하는 컨셉에 맞춰 리뉴얼한 사이트입니다.",
+      "개인 프로젝트로, PC 환경에만 적합했던 기존 페이지를 모바일에서도 직관적으로 사용할 수 있도록 브랜드가 추구하는 컨셉에 맞춰 리뉴얼한 사이트입니다.",
     ],
     descs: [
       "Swiper 라이브러리를 이용해 자동 슬라이드와 인디케이터 활성화",

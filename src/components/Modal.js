@@ -36,6 +36,9 @@ const Modal = ({ modal, openModal, closeModal }) => {
                 <span>{tag}</span>
               ))}
             </div>
+            <div className={styles.groupB_date}>
+              {item.date}
+            </div>
 
             <div className={styles.detail_wrapper}>
               {item.id >= 1 && (

@@ -60,6 +60,9 @@ const Projects = () => {
                       <span key={tag.id}>{tag}</span>
                     ))}
                   </div>
+                  <div className={styles.groupA_date}>
+                    {item.date}
+                  </div>
                   <div className={styles.groupA_detail}>
                     <div className={styles.groupA_detail_wrapper }>
                       {item.infos.map((info) => (

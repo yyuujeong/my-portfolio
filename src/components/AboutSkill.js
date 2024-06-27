@@ -48,7 +48,7 @@ const AboutSkill = () => {
                 웹기획, 웹디자인{"("}UIUX{")"} & 웹퍼블리셔, 반응형 웹페이지
                 구현
               </li>
-              <li className={styles.date}>2021.12 ~ 2022.09</li>
+              <li className={styles.date}>2022.01 ~ 2022.07</li>
             </ul>
           </div>
         </div>
