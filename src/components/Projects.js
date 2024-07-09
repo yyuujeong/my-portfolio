@@ -41,7 +41,9 @@ const Projects = () => {
                 </li>
                 <li>
                   <div className={styles.groupA_detail_header}>
-                    <h3 className={styles.groupA_project_title}>{item.title}</h3>
+                    <h3 className={styles.groupA_project_title}>
+                      {item.title}
+                    </h3>
                     <ul className={styles.groupA_detail_btns}>
                       <li className={styles.project_detail_btn}>
                         <a href={item.github} target="_blank">
@@ -55,16 +57,19 @@ const Projects = () => {
                       </li>
                     </ul>
                   </div>
+                  <div className={styles.groupA_catendate}>
+                    <ul>
+                      <li>{item.category}</li>
+                      <li>{item.date}</li>
+                    </ul>
+                  </div>
                   <div className={styles.groupA_hashtag}>
                     {item.tags.map((tag) => (
                       <span key={tag.id}>{tag}</span>
                     ))}
                   </div>
-                  <div className={styles.groupA_date}>
-                    {item.date}
-                  </div>
                   <div className={styles.groupA_detail}>
-                    <div className={styles.groupA_detail_wrapper }>
+                    <div className={styles.groupA_detail_wrapper}>
                       {item.infos.map((info) => (
                         <ul>
                           <li>{info}</li>
@@ -96,6 +101,7 @@ const Projects = () => {
                 <li className={styles.groupB_wrapper}>
                   <img src={item.img} alt={item.name} />
                   <div className={styles.project_info}>
+                    <p className={styles.project_date}>{item.date}</p>
                     <div className={styles.project_hashtag}>
                       {item.tags.map((tag) => (
                         <span key={tag.id}>{tag}</span>
@@ -115,7 +121,7 @@ const Projects = () => {
                         <li
                           className={`${styles.project_btn} ${styles.more_info}`}
                         >
-                          {item.id < 5 ? (
+                          {item.id < 6 ? (
                             <a href={item.site} target="_blank">
                               사이트
                             </a>

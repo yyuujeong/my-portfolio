@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/AboutSkill.module.css";
 import profileImg1 from "../images/profile-img1.png";
 import profileImg2 from "../images/profile-img2.png";
-import { FaEnvelope, FaGithub, FaGear } from "react-icons/fa6";
+import { FaEnvelope, FaMobileButton ,FaGithub, FaGear } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa";
 import { skillTools } from "../datastorage/basic";
 
@@ -22,18 +22,20 @@ const AboutSkill = () => {
             개발을 접한 후 웹을 보는 시각이 새로워졌고, 흥미와 열정을 가지고 직접 개발을 하게 되었습니다.
             </li>
             <li>
-              어떻게 하면 사용자가 쉽고 편하게 사용할 수 있을지, 어떤 점을
-              개선해야 할지 끊임없이 고민합니다.
+            사용자의 편의성에 중시하며 개선 방법에 대해 끊임없이 고민합니다.
             </li>
             <li>
-              다양한 기술을 습득해 적용하고 협업하며 사용자 중심의 솔루션을
-              제공하고 싶습니다.
+            다양한 기술을 습득하고 협업을 통해 사용자 중심의 솔루션을 제공하고자 합니다.
             </li>
           </ul>
           <div className={styles.profile_text}>
             <ul className={styles.profile_details}>
               <li className={styles.details_left}>
                 <a href="https://github.com/yyuujeong" target="_blank"><FaGithub className={styles.icons}/>깃허브: yyuujeong</a>
+              </li>
+              <li className={styles.details_left}>
+                <FaMobileButton className={styles.icons} />
+                핸드폰: 010-2402-7496
               </li>
               <li className={styles.details_left}>
                 <FaEnvelope className={styles.icons} />

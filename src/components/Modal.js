@@ -31,15 +31,14 @@ const Modal = ({ modal, openModal, closeModal }) => {
             <div className={styles.detail_content}>
               <img src={item.img} alt={item.name} />
             </div>
+            <div className={styles.groupB_date}>
+              {item.date}
+            </div>
             <div className={styles.modal_page_hashtag}>
               {item.tags.map((tag) => (
                 <span>{tag}</span>
               ))}
             </div>
-            <div className={styles.groupB_date}>
-              {item.date}
-            </div>
-
             <div className={styles.detail_wrapper}>
               {item.id >= 1 && (
                 <div>

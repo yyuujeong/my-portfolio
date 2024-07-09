@@ -19,9 +19,10 @@
   font-size: 3.8rem;
 }
 .intro_title_line {
-  line-height: 1.5;
+  line-height: 1.7;
+  letter-spacing: 0.1rem;
 }
-.intro_title_line strong {
+.intro_title_line strong, p {
   position: relative;
   font-family: "NanumSquareNeoHeavy";
 }
@@ -30,9 +31,9 @@
   content: "";
   width: calc(100% + 10px);
   position: absolute;
-  height: 55%;
+  height: 40%;
   left: -2px;
-  bottom: 0;
+  bottom: -2px;
   z-index: -1;
 }
 .down_arrow {
@@ -76,7 +77,7 @@
     width: 45%;
   }
   .intro_title {
-    font-size: 5rem;
+    font-size: 4.5rem;
     top: 0;
   }
 }

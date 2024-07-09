@@ -11,10 +11,13 @@ const Intro = () => {
         <Web width="100%" height="100vh" className={styles.svg} />
         <ul className={styles.intro_title}>
           <li className={styles.intro_title_line}>
-            <strong>YUJEONG</strong>
+            <strong>인터랙티브한 </strong>
           </li>
           <li className={styles.intro_title_line}>
-            <strong>PORTFOLIO</strong>
+            <strong>서비스를 추구하는 </strong>
+          </li>
+          <li className={styles.intro_title_line}>
+            <p>나유정입니다.</p>
           </li>
         </ul>
       </div>

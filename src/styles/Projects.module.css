@@ -54,8 +54,15 @@
 .groupA_detail_btns a:hover .icon {
   fill: #46b96c;
 }
-.groupA_date {
+.groupA_catendate {
   margin: 0.5rem 0 1.5rem 0.3rem;
+  color: #868686;
+}
+.groupA_catendate ul {
+  display: flex;
+  justify-content: space-between;
+}
+.groupA_catendate li {
   color: #868686;
 }
 .groupA_hashtag span {
@@ -67,7 +74,7 @@
   margin: 0 0.5rem 0.5rem 0;
 }
 .groupA_detail_wrapper {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .groupA_detail_wrapper:first-child {
   background: #e1e1e1;
@@ -85,7 +92,7 @@
   text-align: left;
   font-size: 1.5rem;
   line-height: 1.5;
-  margin: 0 0 0.5rem 0.3rem;
+  margin: 0 0 0.7rem 0.3rem;
   padding-left: 2.5rem;
 }
 .groupA_detail_wrapper ul li::before {
@@ -139,6 +146,10 @@
   background: #eaeaef;
   padding: 0.5rem 0.7rem;
   margin: 0 0.5rem 1rem 0;
+}
+.project_date {
+  margin-bottom: 1rem;
+  color: #868686;
 }
 .project_category {
   font-size: 1.3rem;
