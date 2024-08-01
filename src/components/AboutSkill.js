@@ -19,13 +19,13 @@ const AboutSkill = () => {
         <div className={styles.about_wrapper}>
           <ul className={styles.profile_sentence}>
             <li>
-            개발을 접한 후 웹을 보는 시각이 새로워졌고, 흥미와 열정을 가지고 직접 개발을 하게 되었습니다.
+            리액트로 개발하고 깃허브로 버전 관리를 하여 Vercel을 통해 프로젝트를 배포한 경험이 있습니다.
             </li>
             <li>
-            사용자의 편의성에 중시하며 개선 방법에 대해 끊임없이 고민합니다.
+            사용자 경험과 편의성을 중시하며 개선 방법을 탐구하고 적용하는 데 집중합니다.
             </li>
             <li>
-            다양한 기술을 습득하고 협업을 통해 사용자 중심의 솔루션을 제공하고자 합니다.
+            TypeScript, SCSS, Zustand 등 다양한 기술을 학습하며, 협업을 통해 사용자 중심의 서비스를 제공하고자 합니다.
             </li>
           </ul>
           <div className={styles.profile_text}>

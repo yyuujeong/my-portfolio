@@ -79,7 +79,7 @@ const Projects = () => {
                     <div className={styles.groupA_detail_wrapper}>
                       <div className={styles.bookmark_title}>
                         <FaHashtag className={styles.bookmark} />
-                        주요 기능
+                        개발 내용
                       </div>
                       {item.descs.map((desc, index) => (
                         <ul key={index}>
@@ -101,16 +101,16 @@ const Projects = () => {
                 <li className={styles.groupB_wrapper}>
                   <img src={item.img} alt={item.name} />
                   <div className={styles.project_info}>
+                    <h3 className={styles.project_title}>{item.title}</h3>
+                    <span className={styles.project_category}>
+                      {item.category}
+                    </span>
                     <p className={styles.project_date}>{item.date}</p>
                     <div className={styles.project_hashtag}>
                       {item.tags.map((tag) => (
                         <span key={tag.id}>{tag}</span>
                       ))}
                     </div>
-                    <span className={styles.project_category}>
-                      {item.category}
-                    </span>
-                    <h3 className={styles.project_title}>{item.title}</h3>
                     <div>
                       <ul className={styles.project_btns}>
                         <li

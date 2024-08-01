@@ -52,7 +52,7 @@ const Modal = ({ modal, openModal, closeModal }) => {
                   <div className={styles.detail_text}>
                     <div className={styles.bookmark_title}>
                       <FaHashtag className={styles.bookmark} />
-                      주요기능
+                      개발 내용
                     </div>
                     {item.descs.map((desc, index) => (
                       <ul key={index}>
