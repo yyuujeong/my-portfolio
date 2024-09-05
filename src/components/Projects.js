@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Projects.module.css";
 import { groupAList, groupBList } from "../datastorage/basic";
-import { FaGithub, FaLink, FaHashtag } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import Modal from "./Modal";
 
 const Projects = () => {
@@ -76,20 +76,37 @@ const Projects = () => {
                         </ul>
                       ))}
                     </div>
-                    <div className={styles.groupA_detail_wrapper}>
-                      <div className={styles.bookmark_title}>
-                        <FaHashtag className={styles.bookmark} />
-                        개발 내용
-                      </div>
-                      {item.descs.map((desc, index) => (
-                        <ul key={index}>
-                          <li>{desc}</li>
-                        </ul>
-                      ))}
-                    </div>
                   </div>
                 </li>
               </ul>
+              <div className={styles.groupA_detail_wrapper}>
+                <div className={styles.bookmark_title}>
+                  <div>개발 내용</div>
+                </div>
+                {item.descs.map((desc, index) => (
+                  <ul key={index}>
+                    <li>{desc}</li>
+                  </ul>
+                ))}
+              </div>
+              <div className={styles.groupA_detail_wrapper}>
+                <div className={styles.bookmark_title}>
+                  <div>트러블 슈팅</div>
+                </div>
+                <ul>
+                  <li>{item.troubles}</li>
+                </ul>
+              </div>
+              <div className={styles.groupA_detail_last}>
+                <div className={styles.bookmark_title}>
+                <div>해결 방법</div>
+                </div>
+                {item.solves.map((solve, index) => (
+                  <ul key={index}>
+                    <li>{solve}</li>
+                  </ul>
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -121,7 +138,7 @@ const Projects = () => {
                         <li
                           className={`${styles.project_btn} ${styles.more_info}`}
                         >
-                          {item.id < 6 ? (
+                          {item.id < 5 ? (
                             <a href={item.site} target="_blank">
                               사이트
                             </a>

@@ -72,7 +72,8 @@
   margin-right: 0.5rem;
   padding: 0.5rem 0.7rem;
 }
-.groupB_date {
+.groupB_date,
+.groupB_category {
   margin: 1rem 0 0 0.3rem;
   color: #868686;
 }
@@ -96,22 +97,18 @@
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 0 0 1rem 0.3rem;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
 }
 .detail_text ul li::before {
   position: absolute;
   left: 0rem;
-  content: "\2705";
+  content: "\2027";
   font-size: 0.7rem;
 }
 .bookmark_title {
   font-family: "NanumSquareNeoHeavy";
   font-size: 1.8rem;
   margin-bottom: 1rem;
-}
-.bookmark {
-  margin-right: 0.5rem;
-  vertical-align: middle;
 }
 
 /* tablet */

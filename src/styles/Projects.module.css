@@ -21,14 +21,10 @@
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.bookmark {
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
 
 /* groupA */
 .groupA_wrapper {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .groupA_detail_header {
   display: flex;
@@ -74,7 +70,7 @@
   margin: 0 0.5rem 0.5rem 0;
 }
 .groupA_detail_wrapper {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 3rem 0;
 }
 .groupA_detail_wrapper:first-child {
   background: #e1e1e1;
@@ -87,18 +83,23 @@
 .groupA_detail_wrapper:first-child ul li::before {
   content: "💁‍♀️";
 }
-.groupA_detail_wrapper ul li {
+.groupA_detail_last {
+  margin-bottom: 7rem;
+}
+.groupA_detail_wrapper ul li,
+.groupA_detail_last ul li {
   position: relative;
   text-align: left;
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 0 0 0.7rem 0.3rem;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
 }
-.groupA_detail_wrapper ul li::before {
+.groupA_detail_wrapper ul li::before,
+.groupA_detail_last ul li::before {
   position: absolute;
   left: 0rem;
-  content: "\2705";
+  content: "\2027";
   font-size: 0.7rem;
 }
 .groupA_detail .groupA_detail_wrapper:nth-child(2) {
@@ -237,10 +238,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    margin-bottom: 7rem;
-  }
-  .groupA_wrapper > li:first-child {
-    order: 2;
   }
   .groupA_project_title {
     margin-top: 0;

@@ -5,8 +5,10 @@
 .intro_container {
   width: 85%;
   margin: 0 auto;
-  position: relative;
-  top: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .svg {
   width: 100%;
@@ -16,7 +18,7 @@
 .intro_title {
   position: relative;
   top: 4.3rem;
-  font-size: 3.8rem;
+  font-size: 3rem;
 }
 .intro_title_line {
   line-height: 1.7;
@@ -35,6 +37,44 @@
   left: -2px;
   bottom: -2px;
   z-index: -1;
+}
+.intro_resume_btn {
+  width: 13rem;
+  margin-top: 7rem;
+  border: 1px solid #333;
+  box-shadow: 3px 3px 0 0 #333;
+  text-align: center;
+  height: 3.5rem;
+  line-height: 2.4;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.intro_resume_btn a {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  font-size: 1.3rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.intro_resume_btn a:after {
+  content: "👉️";
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  transition: 0.5s;
+  opacity: 0;
+}
+.intro_resume_btn:hover {
+  background: #333;
+  color: #fafafa;
+}
+.intro_resume_btn:hover a,
+.intro_resume_btn:hover a:after {
+  padding-right: 1.5rem;
+  color: #fafafa;
+  opacity: 1;
 }
 .down_arrow {
   font-size: 4rem;
@@ -67,7 +107,6 @@
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .intro_container {
     width: 70%;
-    height: 50%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -75,9 +114,15 @@
   }
   .svg {
     width: 45%;
+    top: 3rem;
   }
   .intro_title {
     font-size: 4.5rem;
     top: 0;
+  }
+  .intro_resume_btn {
+    position: absolute;
+    left: 0;
+    top: 75%;
   }
 }

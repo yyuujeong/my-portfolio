@@ -19,13 +19,13 @@ const AboutSkill = () => {
         <div className={styles.about_wrapper}>
           <ul className={styles.profile_sentence}>
             <li>
-            리액트로 개발하고 깃허브로 버전 관리를 하여 Vercel을 통해 프로젝트를 배포한 경험이 있습니다.
+            React로 개발하고 Github로 버전 관리를 하여 Vercel을 통해 프로젝트를 배포한 경험이 있습니다.
             </li>
             <li>
             사용자 경험과 편의성을 중시하며 개선 방법을 탐구하고 적용하는 데 집중합니다.
             </li>
             <li>
-            TypeScript, SCSS, Zustand 등 다양한 기술을 학습하며, 협업을 통해 사용자 중심의 서비스를 제공하고자 합니다.
+            TypeScript, SCSS, Zustand 등 다양한 기술을 학습하며 협업을 통해 사용자 중심의 서비스를 제공하고자 합니다.
             </li>
           </ul>
           <div className={styles.profile_text}>
@@ -34,12 +34,12 @@ const AboutSkill = () => {
                 <a href="https://github.com/yyuujeong" target="_blank"><FaGithub className={styles.icons}/>깃허브: yyuujeong</a>
               </li>
               <li className={styles.details_left}>
-                <FaMobileButton className={styles.icons} />
-                핸드폰: 010-2402-7496
-              </li>
-              <li className={styles.details_left}>
                 <FaEnvelope className={styles.icons} />
                 이메일: imnyj9@gmail.com
+              </li>
+              <li className={styles.details_left}>
+                <FaMobileButton className={styles.icons} />
+                핸드폰: 010-2402-7496
               </li>
             </ul>
             <ul className={styles.profile_details}>
