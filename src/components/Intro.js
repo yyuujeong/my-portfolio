@@ -12,17 +12,17 @@ const Intro = () => {
         <Web width="100%" height="100vh" className={styles.svg} />
         <ul className={styles.intro_title}>
           <li className={styles.intro_title_line}>
-            <strong>인터랙티브한 </strong>
+            <strong>사용자 경험과</strong>
           </li>
           <li className={styles.intro_title_line}>
-            <strong>서비스를 추구하는 </strong>
+            <strong>성장에 진심인 개발자</strong>
           </li>
           <li className={styles.intro_title_line}>
             <p>나유정입니다.</p>
           </li>
         </ul>
         <div className={styles.intro_resume_btn}>
-          <a href="https://even-cowl-554.notion.site/8894c12eaf9a41bcbb33221d0ef366e5?pvs=4" target="_blank">
+          <a href="https://even-cowl-554.notion.site/8894c12eaf9a41bcbb33221d0ef366e5" target="_blank">
             이력서
           </a>
         </div>

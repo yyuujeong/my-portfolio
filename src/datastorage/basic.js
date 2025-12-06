@@ -9,22 +9,20 @@ export const skillTools = [
     skills: [
       "React",
       "JavaScript",
-      "HTML5",
-      "CSS3",
-      "styled-components",
-      "jQuery",
       "Zustand",
+      "Styled-Components",
+      "jQuery",
     ],
-    tools: ["Figma", "Git", "Vercel", "Webpack", "Babel"],
+    tools: ["Git", "Vercel", "Figma"],
     skilldescs: [
-      "웹 표준, 웹 접근성을 준수하여 시맨틱 마크업과 반응형 디자인을 구현합니다.",
-      "JavaScript와 jQuery로 애니메이션 및 이벤트를 활용해 동적인 웹을 구현합니다.",
-      "컴포넌트 기반 설계로 재사용 가능한 UI를 구현하고 CSS-in-JS 방식으로 효율적인 스타일링을 합니다.",
-      "Zustand을 사용해 유지 보수성과 재사용성을 고려한 전역 상태 관리를 구현합니다.",
+      "웹 표준과 접근성을 준수한 시맨틱 마크업 및 반응형 디자인 구현",
+      "JavaScript와 jQuery로 동적 웹 애니메이션 및 이벤트 처리",
+      "컴포넌트 기반 설계와 CSS-in-JS 방식으로 효율적인 스타일링 구현",
+      "Zustand로 유지 보수와 재사용성을 고려한 상태 관리",
     ],
     tooldescs: [
-      "툴을 활용하여 와이어 프레임 제작과 협업이 가능합니다.",
-      "버전 관리와 프로젝트 공유를 위해 Git과 Github를 사용합니다.",
+      "툴을 활용한 와이어 프레임 제작 및 협업",
+      "효율적인 개발과 배포를 위한 도구 활용",
     ],
   },
 ];
@@ -39,27 +37,26 @@ export const groupAList = [
     date: "2023.12 - 2024.02",
     tags: [
       "React",
-      "styled-components",
+      "Styled-Components",
       "Express",
       "Zustand",
       "Webpack",
       "Babel",
     ],
     category: "1인 개발",
-    title: "세계 날씨/위치 기반 미세먼지",
+    title: "세계 날씨 & 위치 기반 미세먼지",
     infos: [
-      "세계 각 도시의 날씨와 사용자의 위치에 따른 미세먼지를 확인할 수 있는 서비스",
+      "세계 날씨 검색 및 위치 기반 미세먼지 정보 제공 서비스",
     ],
     descs: [
-      "Open API와 axios를 활용하여 날씨, 미세먼지, 사용자의 위치 정보를 불러옴",
-      "Zustand로 상태를 관리하고 Webpack, Babel로 최적화하여 페이지 로딩 시간을 기존 대비 약 3.4초 단축"
+      "Open API와 Axios로 날씨, 미세먼지, 위치 정보를 연동하고 화면에 표시",
+      "Zustand로 상태를 관리하고 Webpack과 Babel 최적화를 통해 페이지 로딩 시간 3.4초 단축",
     ],
     troubles: [
-      "API 키 보호를 위해 .env 파일을 만들어 .gitignore에 추가했으나 여전히 네트워크 창에서 키 노출",
+      "API 키 보호를 위해 .env를 설정했으나 여전히 키가 노출되는 문제 발생",
     ],
     solves: [
-      "Express를 이용해 서버 측에서 RESTful API를 작성하고 dotenv를 사용하여 환경 변수 관리",
-      "서버를 Vercel에 배포하고 클라이언트는 서버를 통해서만 API 요청을 수행하도록 변경. 이를 통해 API 키는 서버 내에서만 사용되어 클라이언트에서의 노출 방지",
+      "Express 서버를 적용해 API 요청을 처리하도록 리팩토링하여 클라이언트가 서버를 통해 요청하도록 구현",
     ],
   },
   {
@@ -72,17 +69,17 @@ export const groupAList = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     category: "2인 개발",
     title: "키핑박스",
-    infos: ["짐 보관 예약 서비스 사이트"],
+    infos: ["짐 보관 예약 서비스"],
     descs: [
-      "담당 부분: 메인 페이지 및 예약 페이지의 UI/UX 설계 및 구현",
-      "오늘 날짜 이전 선택 불가 및 사이즈와 날짜에 따른 요금 자동 계산 기능 구현",
-      "JavaScript를 사용하여 폼 유효성 검사를 수행하고 경고 및 확인 창으로 잘못된 입력 방지"
+      "담당 부분: 메인, 예약 페이지 UI/UX 설계 및 구현",
+      "오늘 날짜 이전 선택 불가 기능과 사이즈/날짜별 요금 자동 계산 기능 구현",
+      "JavaScript를 활용한 폼 유효성 검사 및 경고 창 적용으로 잘못된 입력 방지"
     ],
     troubles: [
-      "header, footer 등 공통부분을 HTML include 방식으로 구현했으나 보안 취약 및 성능 저하 가능성 발견",
+      "HTML include 방식으로 구현된 공통 컴포넌트에서 보안 취약성과 성능 저하 문제 발생",
     ],
     solves: [
-      "공통부분을 ES6 모듈로 리팩토링하여 코드 재사용성을 높이고 안정성 향상"
+      "공통 컴포넌트를 ES6 모듈로 리팩토링하여 코드 재사용성을 높이고 성능과 보안을 강화"
     ],
   },
 ];

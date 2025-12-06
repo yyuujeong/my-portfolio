@@ -19,13 +19,18 @@ const AboutSkill = () => {
         <div className={styles.about_wrapper}>
           <ul className={styles.profile_sentence}>
             <li>
-            React로 개발하고 Github로 버전 관리를 하여 Vercel을 통해 프로젝트를 배포한 경험이 있습니다.
+            사용자 친화적인 UI/UX 구현과 성능 최적화에 집중합니다.
             </li>
             <li>
-            사용자 경험과 편의성을 중시하며 개선 방법을 탐구하고 적용하는 데 집중합니다.
+            디자인/퍼블리셔 과정 수료 후 React를 기반으로 프론트엔드 역량을 확장하고 있습니다.
             </li>
             <li>
-            TypeScript, SCSS, Zustand 등 다양한 기술을 학습하며 협업을 통해 사용자 중심의 서비스를 제공하고자 합니다.
+            Open API와 Axios로 데이터를 불러오고 Git과 Vercel을 통해 배포한 경험이 있습니다.
+            </li>
+            <li>
+            Zustand로 상태를 관리하고 Webpack과 Babel 최적화를 통해 사용자 경험을 개선합니다.
+            </li>
+            <li>협업 과정에서 문제를 분석하고 대안을 제시하며 다양한 방식으로 문제를 해결하고자 합니다.
             </li>
           </ul>
           <div className={styles.profile_text}>
@@ -47,8 +52,10 @@ const AboutSkill = () => {
                 UI/UX 반응형 웹디자인&웹퍼블리셔{"("}디자인&코딩{")"}
               </li>
               <li className={styles.details_right}>
-                웹기획, 웹디자인{"("}UIUX{")"} & 웹퍼블리셔, 반응형 웹페이지
-                구현
+              - HTML5, CSS3, JavaScript를 활용한 웹 퍼블리싱 및 반응형 구현
+              </li>
+              <li className={styles.details_right}>
+              - 시맨틱 태그 및 마크업, 기획부터 퍼블리싱까지 웹 제작 프로세스 학습
               </li>
               <li className={styles.date}>2022.01 ~ 2022.07</li>
             </ul>
