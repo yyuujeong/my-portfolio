@@ -4,5 +4,3 @@
 
 ## :hammer_and_pick: 기술
 ```React``` ```CSS Module```
-
-해당 포트폴리오는 리액트로 만들었습니다.

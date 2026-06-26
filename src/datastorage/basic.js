@@ -7,22 +7,23 @@ import work5 from "../images/project-oldchannel.jpg";
 export const skillTools = [
   {
     skills: [
-      "React",
+      "HTML5",
+      "CSS3",
       "JavaScript",
+      "React",
       "Zustand",
-      "Styled-Components",
       "jQuery",
     ],
     tools: ["Git", "Vercel", "Figma"],
     skilldescs: [
-      "웹 표준과 접근성을 준수한 시맨틱 마크업 및 반응형 디자인 구현",
-      "JavaScript와 jQuery로 동적 웹 애니메이션 및 이벤트 처리",
-      "컴포넌트 기반 설계와 CSS-in-JS 방식으로 효율적인 스타일링 구현",
-      "Zustand로 유지 보수와 재사용성을 고려한 상태 관리",
+      "웹 표준과 접근성을 고려한 시맨틱 마크업 및 반응형 웹 구현",
+      "JavaScript와 jQuery를 활용한 DOM 제어 및 이벤트 처리",
+      "React 기반 컴포넌트 설계 및 UI 스타일링 구현",
+      "Zustand를 활용한 전역 상태 관리",
     ],
     tooldescs: [
-      "툴을 활용한 와이어 프레임 제작 및 협업",
-      "효율적인 개발과 배포를 위한 도구 활용",
+      "Git 기반의 버전 관리와 Vercel을 활용한 프로젝트 배포 경험",
+      "Figma를 활용한 와이어프레임 제작 및 화면 구성 설계",
     ],
   },
 ];
@@ -40,23 +41,22 @@ export const groupAList = [
       "Styled-Components",
       "Express",
       "Zustand",
-      "Webpack",
-      "Babel",
     ],
     category: "1인 개발",
-    title: "세계 날씨 & 위치 기반 미세먼지",
+    title: "웨더에어",
     infos: [
       "세계 날씨 검색 및 위치 기반 미세먼지 정보 제공 서비스",
     ],
     descs: [
-      "Open API와 Axios로 날씨, 미세먼지, 위치 정보를 연동하고 화면에 표시",
-      "Zustand로 상태를 관리하고 Webpack과 Babel 최적화를 통해 페이지 로딩 시간 3.4초 단축",
+      "Open API를 활용해 세계 날씨 및 위치 기반 미세먼지 정보 제공",
+      "Zustand를 활용해 날씨와 대기질 데이터를 전역 상태로 관리",
     ],
     troubles: [
-      "API 키 보호를 위해 .env를 설정했으나 여전히 키가 노출되는 문제 발생",
+      "API 키가 클라이언트에 포함되어 브라우저 개발자 도구에서 노출되는 문제 발생",
     ],
     solves: [
-      "Express 서버를 적용해 API 요청을 처리하도록 리팩토링하여 클라이언트가 서버를 통해 요청하도록 구현",
+      "Express 서버를 구축하여 API 요청을 서버에서 처리하도록 구조 개선",
+      "API 키를 서버 환경 변수로 관리하여 클라이언트 노출 문제 해결",
     ],
   },
   {
@@ -69,17 +69,18 @@ export const groupAList = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     category: "2인 개발",
     title: "키핑박스",
-    infos: ["짐 보관 예약 서비스"],
+    infos: ["짐 보관 예약 플로우 및 요금 계산 기능을 구현한 시뮬레이션 프로젝트"],
     descs: [
-      "담당 부분: 메인, 예약 페이지 UI/UX 설계 및 구현",
-      "오늘 날짜 이전 선택 불가 기능과 사이즈/날짜별 요금 자동 계산 기능 구현",
-      "JavaScript를 활용한 폼 유효성 검사 및 경고 창 적용으로 잘못된 입력 방지"
+      "메인·예약 페이지 UI/UX 설계 및 구현 담당",
+      "과거 날짜 선택 제한 및 사이즈·날짜별 요금 계산 기능 구현",
+      "입력값 유효성 검사를 통해 사용자 오류를 줄이고 직관적으로 안내"
     ],
     troubles: [
-      "HTML include 방식으로 구현된 공통 컴포넌트에서 보안 취약성과 성능 저하 문제 발생",
+      "공통 UI 수정 시 여러 파일을 함께 변경해야 하는 유지보수 문제 발생",
     ],
     solves: [
-      "공통 컴포넌트를 ES6 모듈로 리팩토링하여 코드 재사용성을 높이고 성능과 보안을 강화"
+      "공통 UI 요소를 별도 JavaScript 파일로 분리하여 재사용 가능한 구조로 개선",
+      "중복 코드를 제거하고 유지보수 효율 향상",
     ],
   },
 ];
